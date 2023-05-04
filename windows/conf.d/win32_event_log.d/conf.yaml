@@ -1,0 +1,25 @@
+# https://docs.datadoghq.com/integrations/win32_event_log/?tab=logs#overview
+
+init_config:
+logs:
+  - type: windows_event
+    channel_path: "Application"
+    source: "Application"
+    service: Application_Event
+  
+  - type: windows_event
+    channel_path: "Security"
+    source: "Security"
+    service: Security_Event
+
+  - type: windows_event
+    channel_path: "Setup"
+    source: "Setup"
+    service: Setup_Event
+
+  - type: windows_event
+    channel_path: "System"
+    source: "System"
+    service: System_Event
+  
+
