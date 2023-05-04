@@ -1,0 +1,23 @@
+# api key - https://app.datadoghq.com/organization-settings/api-keys
+api_key: <api_key>
+
+# datadog site - https://docs.datadoghq.com/getting_started/site/
+site: datadoghq.com
+
+# logs - needed for windows events - https://docs.datadoghq.com/integrations/win32_event_log
+logs_enabled: true
+logs_config:
+  use_compression: true
+  compression_level: 6
+  batch_wait: 5
+  open_files_limit: 200
+
+# agent configuration through the datadog UI - https://docs.datadoghq.com/infrastructure/list/#agent-configuration
+inventories_configuration_enabled: true
+
+# live processes - https://docs.datadoghq.com/infrastructure/process/?tab=linuxwindows
+process_config:
+  process_collection:
+    enabled: "true"
+
+
