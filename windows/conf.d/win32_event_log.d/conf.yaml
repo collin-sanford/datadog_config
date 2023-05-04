@@ -4,22 +4,22 @@ init_config:
 logs:
   - type: windows_event
     channel_path: "Application"
-    source: "Application"
+    source: windows.events
     service: Application_Event
   
   - type: windows_event
     channel_path: "Security"
-    source: "Security"
+    source: windows.events
     service: Security_Event
 
   - type: windows_event
     channel_path: "Setup"
-    source: "Setup"
+    source: windows.events
     service: Setup_Event
 
   - type: windows_event
     channel_path: "System"
-    source: "System"
+    source: windows.events
     service: System_Event
   
 
