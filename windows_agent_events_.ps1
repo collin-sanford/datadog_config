@@ -37,4 +37,4 @@ logs:
     service: System_Event" > C:\ProgramData\Datadog\conf.d\win32_event_log.d\conf.yaml 
 
 # Restart the Datatdog Agent
-Restart-Service -Name datadogagent
+Restart-Service -Name datadogagent -Force
